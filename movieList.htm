@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Top200Movies</title>
+</head>
+
+<body onload="resetFilters()">
+
+
+  <div class="header">
+    <div class="headerContainer">
+      <h1 class="logo"> <img src="img/logo_White.png" alt="logo" id="logo"><span class="logoBold">200</span>Movies</h1>
+      <div class="sort">
+
+
+        <div class="lang">
+          <input type="radio" checked name='lang' onClick="filterMovies()" value="All" id="all">
+          <label for="all">All</label>
+
+          <input type="radio" name='lang' onClick="filterMovies()" value="English" id="english">
+          <label for="english">English</label>
+
+          <input type="radio" name='lang' onClick="filterMovies()" value="Hindi" id="hindi">
+          <label for="hindi">Hindi</label>
+
+          <input type="radio" name='lang' onClick="filterMovies()" value="Tamil" id="tamil">
+          <label for="tamil">Tamil</label>
+        </div>
+
+
+        <div class="genre">
+          <input type="radio" checked name='genre' onClick="filterMovies()" id="allgenre" value="AllGenres">
+          <label for="allgenre">All</label>
+
+          <input type="radio" name='genre' onClick="filterMovies()" id="comedy" value="Comedy">
+          <label for="comedy">Comedy</label>
+
+          <input type="radio" name='genre' onClick="filterMovies()" id="animated" value="Animated">
+          <label for="animated">Animated</label>
+
+          <input type="radio" name='genre' onClick="filterMovies()" id="action" value="Action">
+          <label for="action">Action</label>
+
+          <input type="radio" name='genre' onClick="filterMovies()" id="romance" value="Romance">
+          <label for="romance">Romance</label>
+
+          <input type="radio" name='genre' onClick="filterMovies()" id="drama" value="Drama">
+          <label for="drama">Drama</label>
+        </div>
+
+        <!-- 
+        <div class="bw">
+          <input type="checkbox" name='bw' id="bw">
+          <label for="bw" id="bw">B&W</label>
+        </div> -->
+
+
+
+        <div class="select-dropdown">
+          <select id="sort">
+            <option value="Name">Sort Order</option>
+            <option value="Name">Name</option>
+            <option value="NameRev">Name Reverse</option>
+            <option value="Date">Release Date</option>
+            <option value="DateRev">Release Date Rev</option>
+            <option value="Star">Star Rating</option>
+            <option value="StarRev">Star Rating Rev</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div id="movies">
+    </div>
+
+
+    <div class="footer">
+
+      <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Titles"></div>
+
+      <!-- <button class="pagination-button-main" id="prev-button" aria-label="Previous page" title="Previous page">
+        &lt;
+      </button>
+
+      <div id="pagination-numbers">
+        Pagination
+      </div>
+
+      <button class="pagination-button-main" id="next-button" aria-label="Next page" title="Next page">
+        &gt;
+      </button> -->
+    </div>
+
+  </div>
+
+  <div id="movieDetail"></div>
+
+  <script src="js/movie.js"></script>
+  <script src="js/time.js"></script>
+
+</body>
+
+</html>

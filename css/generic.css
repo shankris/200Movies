@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  animation-delay: 0.2;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e2e2e2;
+
+  background: url("../img/bg1.png") no-repeat;
+  background-position: -50% 150px;
+  background-attachment: fixed;
+}
+
+
+h1 {
+  text-align: left;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+h1.logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #b6b6b6;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h1.logo .logoBold {
+  font-weight: 700;
+  color: #fff;
+  padding: 0 2px 0 0;
+}
