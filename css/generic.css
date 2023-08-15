@@ -13,11 +13,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   width: 100%;
-  background-color: #e2e2e2;
+  /* background-color: #e2e2e2; */
 
-  background: url("../img/bg1.png") no-repeat;
+  /* background: url("../img/bg1.png") no-repeat; */
   background-position: -50% 150px;
   background-attachment: fixed;
+  background-color: #4f4f4f;
 }
 
 

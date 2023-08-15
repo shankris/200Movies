@@ -2,45 +2,8 @@
       width: 96%;
       max-width: 1400px;
       margin: 0 auto;
-      padding: 70px 0 0 0;
+      padding: 100px 0 0 0;
       position: relative;
-    }
-
-    @media only screen and (max-width: 1920px) {
-
-      #movies {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-        grid-gap: 10px;
-        margin: 0px auto;
-        padding: 20px 0 50px 0;
-        position: relative;
-      }
-
-      @media only screen and (max-width: 768px) {
-        #movies {
-          grid-template-columns: repeat(auto-fit, minmax(160px, auto));
-          grid-gap: 10px;
-        }
-
-        .container {
-          width: 94%;
-          margin: 0 auto;
-        }
-      }
-
-      @media only screen and (max-width: 400px) {
-        #movies {
-          grid-template-columns: repeat(auto-fit, minmax(140px, auto));
-          grid-gap: 6px;
-        }
-
-        .container {
-          width: 94%;
-          margin: 0 auto;
-        }
-      }
-
     }
 
     .movie {
@@ -51,7 +14,7 @@
       position: relative;
       margin: 8px;
       height: auto;
-      background-color: #dfdfdf;
+      background-color: #333;
       border-radius: 6px;
       cursor: pointer;
     }
@@ -69,12 +32,18 @@
       font-weight: 600;
       font-size: 12px;
       /* background: #081027; */
-      color: #727272;
+      color: #a6a6a6;
       width: 100%;
       padding: 8px 6px 6px 6px;
       height: 40px;
       line-height: 1;
+    }
 
+    .movie .year {
+      font-weight: 200;
+      font-size: 10px;
+      color: #6c6c6c;
+      padding: 4px 0 0 0;
     }
 
     .movie .description {
@@ -159,17 +128,17 @@
       align-items: center;
       justify-content: space-between;
       font-size: 14px;
-      width: 900px;
+      width: 700px;
     }
 
     .lang {
       margin: 0 40px 0 0;
-
+      display: flex;
     }
 
     .genre {
       margin: 0 20px 0 0;
-
+      display: flex;
     }
 
     .genre input[type=radio],

@@ -8,7 +8,7 @@
 
 .select-dropdown {
 	position: relative;
-	background-color: #E6E6E6;
+	background-color: #203060;
 	border-radius: 4px;
 }
 
@@ -18,10 +18,12 @@
 	max-width: 100%;
 	padding: 4px 14px 4px 10px;
 	border: none;
-	background-color: transparent;
+	/* background-color: transparent; */
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	background-color: #203060;
+	color: #eee;
 }
 
 .select-dropdown select:active, .select-dropdown select:focus {

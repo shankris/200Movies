@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Top200Movies</title>
@@ -18,9 +19,8 @@
   <div class="header">
     <div class="headerContainer">
       <h1 class="logo"> <img src="img/logo_White.png" alt="logo" id="logo"><span class="logoBold">200</span>Movies</h1>
+
       <div class="sort">
-
-
         <div class="lang">
           <input type="radio" checked name='lang' onClick="filterMovies()" value="All" id="all">
           <label for="all">All</label>
@@ -66,22 +66,18 @@
 
         <div class="select-dropdown">
           <select id="sort">
-            <option value="">View Option</option>
-            <option value="Before1960">Before 1960</option>
-            <option value="1960">1960s</option>
-            <option value="1970">1970s</option>
-            <option value="1980">1980s</option>
-            <option value="1990">1990s</option>
-            <option value="2000">2000 and later</option>
-            <option value="Name">Sort name A - Z</option>
-            <option value="NameRev">Sort Name Z - A</option>
-            <option value="Date">Sort by Date</option>
+            <option value="">Sort Order</option>
+            <option value="Name">Name A - Z</option>
+            <option value="NameRev">Name Z - A</option>
+            <option value="Date">Oldest First</option>
+            <option value="Date">Newsest First</option>
           </select>
           <!-- <option value="DateRev">Sort by reverse Release Date</option> -->
         </div>
 
       </div>
     </div>
+    <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Movies"></div>
   </div>
 
 
@@ -89,28 +85,11 @@
   <div class="container">
     <div id="movies">
 
-
     </div>
-
-    <div class="footer">
-      <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Titles"></div>
-      <!-- <button class="pagination-button-main" id="prev-button" aria-label="Previous page" title="Previous page">
-        &lt;
-      </button>
-
-      <div id="pagination-numbers">
-        Pagination
-      </div>
-
-      <button class="pagination-button-main" id="next-button" aria-label="Next page" title="Next page">
-        &gt;
-      </button> -->
-    </div>
-
   </div>
 
-  <div id="movieDetail"></div>
-  <script src="js/movie.js"></script>
+  <div id="movieDetail">Sample Text</div>
+  <script src="js/movie2.js"></script>
 </body>
 
 </html>

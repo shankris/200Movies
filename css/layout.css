@@ -1,10 +1,10 @@
 #movieDetail {
   background-color: rgba(225, 225, 225, .9);
   width: 100%;
-  height: 100px;
+  height: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 10;
-  padding: 20px
+  padding: 10px
 }

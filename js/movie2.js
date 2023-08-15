@@ -1,25 +1,9 @@
 let sortBy = "Name";
 let movieList = [];
+let sortOrder = document.getElementById("sort");
+const movieDetail = document.getElementById("movieDetail");
 
 sort.addEventListener("change", setSortOrder);
-
-// object.addEventListener("load", resetFilters);
-
-function resetFilters() {
-  document.getElementById("all").checked = true;
-  document.getElementById("allgenre").checked = true;
-}
-
-function setSortOrder() {
-  var sortOrder = document.getElementById("sort");
-  var value = sortOrder.options[sortOrder.selectedIndex].value;
-  var text = sortOrder.options[sortOrder.selectedIndex].text;
-
-  sortBy = value;
-  console.log(sortBy);
-}
-
-const movieDetail = document.getElementById("movieDetail");
 
 function showDetail(movieName) {
   let movie = movieList.filter((movie) => {
@@ -29,6 +13,51 @@ function showDetail(movieName) {
   movieDetail.innerHTML += `${movie[0].Movie}
   <br> ${movie[0].ReleaseDate}
   &nbsp; <time datetime="2016-06-13"></time>`;
+}
+
+// object.addEventListener("load", resetFilters);
+
+function resetFilters() {
+  document.getElementById("all").checked = true;
+  document.getElementById("allgenre").checked = true;
+}
+
+/**  Initial load movie list  */
+const loadMovies = async () => {
+  try {
+    const res = await fetch("json/movies.json");
+    movieList = await res.json();
+    // movieList.sort(SortByName);
+    movieList.sort(SortByDateReverse);
+    movies.innerHTML = movieList;
+    displayList(movieList);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+function SortByName(x, y) {
+  return x.Movie == y.Movie ? 0 : x.Movie < y.Movie ? 1 : -1;
+}
+
+function SortByNameReverse(x, y) {
+  return x.Movie == y.Movie ? 0 : x.Movie > y.Movie ? 1 : -1;
+}
+
+function SortByDate(a, b) {
+  return new Date(a.ReleaseDate).getTime() - new Date(b.ReleaseDate).getTime();
+}
+
+function SortByDateReverse(a, b) {
+  return new Date(b.ReleaseDate).getTime() - new Date(a.ReleaseDate).getTime();
+}
+
+/** Set movie list sort order */
+function setSortOrder() {
+  var value = sortOrder.options[sortOrder.selectedIndex].value;
+  sortBy = value;
+
+  console.log(sortBy);
 }
 
 function displaySort(movieList) {
@@ -62,17 +91,6 @@ searchBar.addEventListener("keyup", (e) => {
   displayList(filteredCharacters);
 });
 
-// Initial Data Load
-const loadCharacters = async () => {
-  try {
-    const res = await fetch("json/movies.json");
-    movieList = await res.json();
-    displayList(movieList);
-  } catch (err) {
-    console.error(err);
-  }
-};
-
 // Filter data by language
 function filterMovies() {
   // console.log("inside filterMovies");
@@ -82,7 +100,7 @@ function filterMovies() {
 
   let filteredMovies = [];
 
-  // console.log("Language:", lang, " Genre:", genre);
+  console.log("Language:", lang, " Genre:", genre);
 
   // const filteredMovies = movieList.filter(value => value.Language === lang)
 
@@ -112,7 +130,9 @@ const displayList = (movieList) => {
         return `
           <div class="movie">
             <a onClick="showDetail('${movie.Image}')"><img src="img/movies_LowRes/${movie.Image}.jpg"  loading="lazy" alt="${movie.Movie}" class="moviePic"></a>
-              <div class="title">${movie.Movie}<br><time datetime="${release}"></time></div>
+              <div class="title">${movie.Movie}<br>
+                <div class="year">${release}</div>
+              </div>
             </div>
         `;
       })
@@ -134,4 +154,4 @@ const displayList = (movieList) => {
   }
 };
 
-loadCharacters();
+loadMovies();
