@@ -76,6 +76,13 @@
         </div>
 
       </div>
+
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+
     </div>
     <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Movies"></div>
   </div>
@@ -90,6 +97,23 @@
 
   <div id="movieDetail">Sample Text</div>
   <script src="js/movie2.js"></script>
+
+  <script>
+
+    const navbarMenu = document.getElementById("sort");
+    const burgerMenu = document.getElementById("burger");
+    const headerMenu = document.getElementById("header");
+
+    // Toggle Navbar Menu on Burger Click
+    if (burgerMenu && navbarMenu) {
+      burgerMenu.addEventListener("click", () => {
+        burgerMenu.classList.toggle("is-active");
+        navbarMenu.classList.toggle("is-active");
+      });
+    }
+
+  </script>
+
 </body>
 
 </html>

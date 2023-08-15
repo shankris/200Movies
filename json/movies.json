@@ -526,7 +526,7 @@
   "Stars": 35,
   "ReleaseDate": "2013-07-05",
   "Color": "Color",
-  "Image": "DespicableMe3",
+  "Image": "DespicableMe2",
   "Overview": "Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal."
  },
  {
@@ -536,7 +536,7 @@
   "Stars": 35,
   "ReleaseDate": "2013-07-05",
   "Color": "Color",
-  "Image": "DespicableMe2",
+  "Image": "DespicableMe3",
   "Overview": "Gru meets his long-lost twin brother Dru, after getting fired from the Anti-Villain League. However, the siblings find themselves at loggerheads with a child actor-turned-villain."
  },
  {
@@ -872,7 +872,7 @@
  {
   "Movie": "Happy New Year",
   "Language": "Hindi",
-  "Genre": "Action",
+  "Genre": "Drama",
   "Stars": 35,
   "ReleaseDate": "2014-10-24",
   "Color": "Color",
@@ -1984,7 +1984,7 @@
   "Language": "English",
   "Genre": "Action",
   "Stars": 35,
-  "ReleaseDate": "2019-06-28",
+  "ReleaseDate": "1999-11-08",
   "Color": "Color",
   "Image": "WorldIsNotEnough",
   "Overview": "Greed, revenge, world dominance and high-tech terrorism – it's all in a day's work for Bond, who's on a mission to protect a beautiful oil heiress from a notorious terrorist. In a race against time that culminates in a dramatic submarine showdown, Bond works to defuse the international power struggle that has the world's oil supply hanging in the balance."
@@ -2008,5 +2008,15 @@
   "Color": "Color",
   "Image": "Zootopia",
   "Overview": "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery."
+ },
+ {
+  "Movie": "The Brain",
+  "Language": "English",
+  "Genre": "Drama",
+  "Stars": 25,
+  "ReleaseDate": "1969-03-07",
+  "Color": "Color",
+  "Image": "TheBrain",
+  "Overview": "The mastermind (David Niven) of Britain's great train robbery plans to rob a French train of NATO money bound for Brussels."
  }
 ]
