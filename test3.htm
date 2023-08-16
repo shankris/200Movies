@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 100%;
+    }
+
+    #sortOptions {
+      margin: 0 auto;
+      width: "100%"
+    }
+
+    #sortOptions img {
+      width: 24px;
+      height: auto;
+      fill: #4a536e;
+      background-color: #efefef;
+      padding: 6px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: .6s;
+    }
+
+    #sortOptions img:hover {
+      background-color: #fff7d4;
+    }
+
+    #sortContent ul li {
+      list-style-type: none;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    #sortOptions input[type=checkbox],
+    #sortOptions #sortContent,
+    input[type=radio] {
+      display: none;
+    }
+
+    #sortOptions.active #sortContent {
+      display: block;
+    }
+
+    #sortOptions input[type=radio]+label {
+      cursor: pointer;
+      /* padding-left: 35px; */
+      position: relative;
+    }
+
+    #sortOptions {
+      margin: 0 auto;
+      /* max-width: 560px; */
+      /* width: 100%; */
+      position: relative;
+    }
+
+    #sortOptions #sortContent {
+      border-radius: 5px;
+      position: absolute;
+      border: 1px solid #b3b3bf;
+      padding: 15px;
+      left: -65px;
+      top: 50px;
+      /* transform: translate(-50%, 0); */
+      width: 90px;
+    }
+
+    #sortOptions #sortContent ul,
+    #sortOptions #sortContent li {
+      margin: 0;
+      padding: 0;
+    }
+
+    #sortOptions #sortContent ul {
+      list-style: none;
+    }
+
+    #sortOptions #sortContent:after,
+    #sortOptions #sortContent:before {
+      bottom: 100%;
+      left: 70%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    #sortOptions #sortContent:after {
+      border-color: rgba(0, 0, 0, 0);
+      border-bottom-color: #ffff;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
+    #sortOptions #sortContent:before {
+      border-color: rgba(179, 179, 191, 0);
+      border-bottom-color: #b3b3bf;
+      border-width: 11px;
+      margin-left: -11px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <div class="filterLabel">Sort By</div>
+  <div id="sortOptions">
+    <img src="img/sort.svg" class="icon" alt="" srcset="">
+
+    <div id="sortContent">
+      <ul>
+        <li><input type="radio" name="test" id="1"><label for="1"><strong>All</strong></label></li>
+        <li><input type="radio" name="test" id="2"><label for="2"><strong>Name A- Z</strong></label></li>
+        <li><input type="radio" name="test" id="3"><label for="3"><strong>Name Z - A</strong></label></li>
+        <li><input type="radio" name="test" id="4"><label for="4"><strong>Newest First</strong></label></li>
+        <li><input type="radio" name="test" id="5"><label for="5"><strong>Oldest First</strong></label></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <script>
+
+    let toggle = function () {
+      document.getElementById('sortOptions').classList.toggle('active');
+    }
+    document.getElementById('sortOptions').addEventListener("click", toggle);
+
+  </script>
+
+</body>
+
+</html>

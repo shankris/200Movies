@@ -20,7 +20,9 @@
     <div class="headerContainer">
       <h1 class="logo"> <img src="img/logo_White.png" alt="logo" id="logo"><span class="logoBold">200</span>Movies</h1>
 
-      <div class="sort">
+      <div class="sort" id="sort">
+
+        <div class="filterLabel">Filter by Language</div>
         <div class="lang">
           <input type="radio" checked name='lang' onClick="filterMovies()" value="All" id="all">
           <label for="all">All</label>
@@ -35,7 +37,7 @@
           <label for="tamil">Tamil</label>
         </div>
 
-
+        <div class="filterLabel">Filter by Genre</div>
         <div class="genre">
           <input type="radio" checked name='genre' onClick="filterMovies()" id="allgenre" value="AllGenres">
           <label for="allgenre">All</label>
@@ -56,35 +58,26 @@
           <label for="drama">Drama</label>
         </div>
 
-        <!-- 
-        <div class="bw">
-          <input type="checkbox" name='bw' id="bw">
-          <label for="bw" id="bw">B&W</label>
-        </div> -->
-
-
-
-        <div class="select-dropdown">
-          <select id="sort">
-            <option value="">Sort Order</option>
-            <option value="Name">Name A - Z</option>
-            <option value="NameRev">Name Z - A</option>
-            <option value="Date">Oldest First</option>
-            <option value="Date">Newsest First</option>
-          </select>
-          <!-- <option value="DateRev">Sort by reverse Release Date</option> -->
+        <div class="filterLabel">Sort By</div>
+        <img src="img/sort.svg" class="icon" alt="" srcset="">
+        <div class="sortOrder">
+          <input type="radio" name="sortOrder" id="name" value="name"><label for="name">Name A- Z</label>
+          <input type="radio" name="sortOrder" id="nameRev" value="nameRev"><label for="nameRev">Name Z - A</label>
+          <input type="radio" name="sortOrder" id="new" checked value="new"><label for="new">New First</label>
+          <input type="radio" name="sortOrder" id="old" value="old"><label for="old">Old First</label>
         </div>
-
       </div>
-
       <div class="burger" id="burger">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
         <span class="burger-line"></span>
       </div>
-
     </div>
-    <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Movies"></div>
+
+
+
+  </div>
+  <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Movies"></div>
   </div>
 
 
@@ -111,6 +104,13 @@
         navbarMenu.classList.toggle("is-active");
       });
     }
+
+
+    let toggle = function () {
+      document.getElementById('#sortOptions').classList.toggle('active');
+    }
+    document.getElementById('#sortOptions').addEventListener("click", toggle);
+
 
   </script>
 

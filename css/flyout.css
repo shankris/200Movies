@@ -1,0 +1,158 @@
+#sortOptions img {
+  width: 24px;
+  height: auto;
+  fill: #4a536e;
+  background-color: #efefef;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#sortOptions img:hover {
+  background-color: #fff7d4;
+}
+
+#sortOptions input[type=checkbox],
+#sortOptions #sortContent,
+input[type=radio] {
+  display: none;
+}
+
+#sortOptions.active #sortContent {
+  display: block;
+}
+
+#sortOptions input[type=radio]+label {
+  cursor: pointer;
+  padding-left: 35px;
+  position: relative;
+}
+
+#sortOptions input[type=radio]+label:before {
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #dcdbe5;
+}
+
+#sortOptions input[type=radio]:checked+label:before {
+  left: -3px;
+  background: #60c8ee;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 0px 2px #53e0ed;
+}
+
+
+#sortOptions {
+  margin: 0 auto;
+  /* max-width: 560px; */
+  /* width: 100%; */
+  position: relative;
+}
+
+#sortOptions #sortContent {
+  border-radius: 5px;
+  position: absolute;
+  border: 1px solid #b3b3bf;
+  padding: 15px;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%, 0);
+  width: 230px;
+}
+
+#sortOptions #sortContent ul,
+#sortOptions #sortContent li {
+  margin: 0;
+  padding: 0;
+}
+
+#sortOptions #sortContent ul {
+  list-style: none;
+}
+
+#sortOptions #sortContent:after,
+#sortOptions #sortContent:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#sortOptions #sortContent:after {
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom-color: #ffff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+#sortOptions #sortContent:before {
+  border-color: rgba(179, 179, 191, 0);
+  border-bottom-color: #b3b3bf;
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+#sortOptions .icon-wrapper {
+  color: #b3b3bf;
+}
+
+#sortOptions .icon-wrapper i {
+  position: relative;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #dcdbe5;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: #2f255b;
+}
+
+#sortOptions .icon-wrapper i:before {
+  display: block;
+  line-height: 18px;
+  font-size: 10px;
+}
+
+#sortOptions .icon-wrapper li {
+  border-bottom: 1px solid #dcdbe5;
+  padding-bottom: 15px;
+  max-height: 32px;
+  margin-top: 15px;
+  color: #2f255b;
+}
+
+#sortOptions .icon-wrapper li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+#sortOptions .icon-wrapper li:first-child {
+  margin-top: 0;
+}
+
+#sortOptions .icon-wrapper li span {
+  display: block;
+  padding-left: 35px;
+  font-size: 0.9em;
+  color: #b3b3bf;
+}
+
+#sortOptions .icon-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+#sortOptions .dropdown-heading {
+  color: #b3b3bf;
+}

@@ -87,6 +87,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      text-align: center;
     }
 
     .field {
@@ -128,7 +129,7 @@
       align-items: center;
       justify-content: space-between;
       font-size: 14px;
-      width: 700px;
+      width: 620px;
     }
 
     .lang {
@@ -141,15 +142,20 @@
       display: flex;
     }
 
+    .sortOrder {
+      display: flex;
+    }
+
     .genre input[type=radio],
     .lang input[type=radio],
-    .bw input[type=radio] {
+    .bw input[type=radio],
+    .sortOrder input[type=radio] {
       display: none;
     }
 
     .genre input+label,
     .bw input+label,
-    .lang input+label {
+    .lang input+label, .sortOrder input+label {
       display: flex;
       /* border: 1px solid rgba(204, 202, 202, 0.62); */
       padding: 2px 10px 2px 6px;
@@ -165,7 +171,8 @@
 
     .genre input:checked+label,
     .bw input:checked+label,
-    .lang input:checked+label {
+    .lang input:checked+label,
+    .sortOrder input:checked+label {
       /* box-shadow: 0px 4px 15px 0px rgba(34, 34, 34, 0.41); */
       /* border-color: #fff; */
       background: rgb(255, 255, 255);
