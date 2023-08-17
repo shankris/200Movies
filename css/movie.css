@@ -142,8 +142,21 @@
       display: flex;
     }
 
-    .sortOrder {
-      display: flex;
+    .sort .sortOrder {
+      display: none;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .sort .sortOrder {
+        display: flex;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .sortOrder {
+        display: none;
+      }
     }
 
     .genre input[type=radio],
@@ -177,12 +190,11 @@
       /* border-color: #fff; */
       background: rgb(255, 255, 255);
       color: #333;
+      /* height: 18px; */
     }
 
 
     /* ----- Checkbox Code Ends ----- */
-
-
 
 
     @media only screen and (max-width: 768px) {

@@ -61,10 +61,14 @@
         <div class="filterLabel">Sort By</div>
         <img src="img/sort.svg" class="icon" alt="" srcset="">
         <div class="sortOrder">
-          <input type="radio" name="sortOrder" id="name" value="name"><label for="name">Name A- Z</label>
-          <input type="radio" name="sortOrder" id="nameRev" value="nameRev"><label for="nameRev">Name Z - A</label>
-          <input type="radio" name="sortOrder" id="new" checked value="new"><label for="new">New First</label>
-          <input type="radio" name="sortOrder" id="old" value="old"><label for="old">Old First</label>
+          <input type="radio" name="sortOrder" id="name" value="name" onClick="filterMovies()"><label for="name">Name
+            A-Z</label>
+          <input type="radio" name="sortOrder" id="nameRev" value="nameRev" onClick="filterMovies()"><label
+            for="nameRev">Name Z-A</label>
+          <input type="radio" name="sortOrder" id="new" checked value="new" onClick="filterMovies()"><label
+            for="new">Newest First</label>
+          <input type="radio" name="sortOrder" id="old" value="old" onClick="filterMovies()"><label for="old">Oldest
+            First</label>
         </div>
       </div>
       <div class="burger" id="burger">
@@ -105,13 +109,10 @@
       });
     }
 
-
     let toggle = function () {
       document.getElementById('#sortOptions').classList.toggle('active');
     }
     document.getElementById('#sortOptions').addEventListener("click", toggle);
-
-
   </script>
 
 </body>

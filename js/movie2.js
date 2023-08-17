@@ -1,9 +1,9 @@
 let sortBy = "Name";
 let movieList = [];
-let sortOrder = document.getElementById("sort");
+// let sortOrder = document.getElementById("sortOrder").value;
 const movieDetail = document.getElementById("movieDetail");
 
-sort.addEventListener("change", setSortOrder);
+// sort.addEventListener("change", setSortOrder);
 
 function showDetail(movieName) {
   let movie = movieList.filter((movie) => {
@@ -12,7 +12,7 @@ function showDetail(movieName) {
   movieDetail.innerHTML = "";
   movieDetail.innerHTML += `${movie[0].Movie}
   <br> ${movie[0].ReleaseDate}
-  &nbsp; <time datetime="2016-06-13"></time>`;
+  `;
 }
 
 // object.addEventListener("load", resetFilters);
@@ -20,6 +20,7 @@ function showDetail(movieName) {
 function resetFilters() {
   document.getElementById("all").checked = true;
   document.getElementById("allgenre").checked = true;
+  document.getElementById("searchBar").value = "";
 }
 
 /**  Initial load movie list  */
@@ -28,7 +29,7 @@ const loadMovies = async () => {
     const res = await fetch("json/movies.json");
     movieList = await res.json();
     // movieList.sort(SortByName);
-    movieList.sort(SortByDateReverse);
+    movieList.sort(SortByName);
     movies.innerHTML = movieList;
     displayList(movieList);
   } catch (err) {
@@ -37,49 +38,25 @@ const loadMovies = async () => {
 };
 
 function SortByName(x, y) {
-  return x.Movie == y.Movie ? 0 : x.Movie < y.Movie ? 1 : -1;
+  return x.Movie === y.Movie ? 0 : x.Movie > y.Movie ? 1 : -1;
 }
 
 function SortByNameReverse(x, y) {
-  return x.Movie == y.Movie ? 0 : x.Movie > y.Movie ? 1 : -1;
+  return x.Movie === y.Movie ? 0 : x.Movie < y.Movie ? 1 : -1;
 }
 
 function SortByDate(a, b) {
-  return new Date(a.ReleaseDate).getTime() - new Date(b.ReleaseDate).getTime();
-}
-
-function SortByDateReverse(a, b) {
   return new Date(b.ReleaseDate).getTime() - new Date(a.ReleaseDate).getTime();
 }
 
-/** Set movie list sort order */
-function setSortOrder() {
-  var value = sortOrder.options[sortOrder.selectedIndex].value;
-  sortBy = value;
-
-  console.log(sortBy);
-}
-
-function displaySort(movieList) {
-  console.log(movieList);
-
-  if (sortBy === "Name") {
-    movieList = movieList.sort();
-    console.log("Sort");
-    displayList(movieList);
-  } else if (sortBy === "NameRev") {
-    movieList = movieList.reverse();
-    console.log("Reverse Sort");
-    displayList(movieList);
-  } else {
-    console.log("Other sort order selected");
-  }
+function SortByDateReverse(a, b) {
+  return new Date(a.ReleaseDate).getTime() - new Date(b.ReleaseDate).getTime();
 }
 
 const movies = document.getElementById("movies");
 const searchBar = document.getElementById("searchBar");
 
-movies.innerHTML = "Test";
+// movies.innerHTML = "Test";
 
 // Search Functionality
 searchBar.addEventListener("keyup", (e) => {
@@ -93,30 +70,43 @@ searchBar.addEventListener("keyup", (e) => {
 
 // Filter data by language
 function filterMovies() {
-  // console.log("inside filterMovies");
-
   var lang = document.querySelector("input[type=radio][name=lang]:checked").value;
   var genre = document.querySelector("input[type=radio][name=genre]:checked").value;
+  var sortOrder = document.querySelector("input[type=radio][name=sortOrder]:checked").value;
 
   let filteredMovies = [];
 
-  console.log("Language:", lang, " Genre:", genre);
+  console.log("Language:", lang, " Genre:", genre, " Sort Order: ", sortOrder);
 
   // const filteredMovies = movieList.filter(value => value.Language === lang)
 
   if (lang != "All" && genre != "AllGenres") {
     filteredMovies = movieList.filter((value) => value.Language === lang).filter((item) => item.Genre === genre);
-
-    displayList(filteredMovies);
+    // displayList(filteredMovies);
   } else if (lang === "All" && genre === "AllGenres") {
-    displayList(movieList);
+    filteredMovies = movieList;
+    // displayList(movieList);
   } else if (lang === "All") {
     filteredMovies = movieList.filter((value) => value.Genre === genre);
-    displayList(filteredMovies);
+    // displayList(filteredMovies);
   } else {
     filteredMovies = movieList.filter((value) => value.Language === lang);
-    displayList(filteredMovies);
+    // displayList(filteredMovies);
   }
+  console.log(filteredMovies);
+
+  if (sortOrder === "name") {
+    filteredMovies = filteredMovies.sort(SortByName);
+    console.log(filterMovies);
+  } else if (sortOrder === "nameRev") {
+    filteredMovies = filteredMovies.sort(SortByNameReverse);
+  } else if (sortOrder === "new") {
+    filteredMovies = filteredMovies.sort(SortByDate);
+  } else {
+    filteredMovies = filteredMovies.sort(SortByDateReverse);
+  }
+
+  displayList(filteredMovies);
 }
 
 // Display Data

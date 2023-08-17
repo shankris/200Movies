@@ -100,7 +100,7 @@
   "Overview": "When loser Marvin Mange is involved in a horrible car accident, he's brought back to life by a deranged scientist as half man and half animal. His newfound powers are awesome -- but their adverse side effects could take over his life. Now, Marvin must fight to control his crazy primal urges around his new squeeze, Rianna, and his rival, Sgt. Sisk, who both think he's one cool cat."
  },
  {
-  "Movie": "Asterix and Obelix - Mansion of the Gods",
+  "Movie": "Asterix - Mansion of the Gods",
   "Language": "English",
   "Genre": "Animated",
   "Stars": 35,
@@ -534,7 +534,7 @@
   "Language": "English",
   "Genre": "Animated",
   "Stars": 35,
-  "ReleaseDate": "2013-07-05",
+  "ReleaseDate": "2017-06-30",
   "Color": "Color",
   "Image": "DespicableMe3",
   "Overview": "Gru meets his long-lost twin brother Dru, after getting fired from the Anti-Villain League. However, the siblings find themselves at loggerheads with a child actor-turned-villain."
@@ -1108,16 +1108,6 @@
   "Color": "Color",
   "Image": "JabWeMet",
   "Overview": "A depressed wealthy businessman and a spunky and care-free young woman embark on an unexpected journey that changes their lives."
- },
- {
-  "Movie": "Jackal, The",
-  "Language": "English",
-  "Genre": "Action",
-  "Stars": 35,
-  "ReleaseDate": "1997-11-14",
-  "Color": "Color",
-  "Image": "JackalThe",
-  "Overview": "Hired by a powerful member of the Russian mafia to avenge an FBI sting that left his brother dead, a psychopathic hitman known only as The Jackal proves an elusive target for the people charged with the task of bringing him down: a deputy FBI director, a Russian MVK Major, and a jailed IRA terrorist who can recognize him."
  },
  {
   "Movie": "Jason Bourne",
@@ -2018,5 +2008,25 @@
   "Color": "Color",
   "Image": "TheBrain",
   "Overview": "The mastermind (David Niven) of Britain's great train robbery plans to rob a French train of NATO money bound for Brussels."
+ },
+ {
+  "Movie": "Chalti Ka Naam Gaadi",
+  "Language": "Hindi",
+  "Genre": "Comedy",
+  "Stars": 25,
+  "ReleaseDate": "1958-01-01",
+  "Color": "BW",
+  "Image": "ChaltiKaNaamGaadi",
+  "Overview": "Brijmohan believes that his love, Kamini, left him for another man and resents women. When his two brothers, who had planned for lifelong bachelorhood, fall in love, they fear his wrath."
+ },
+ {
+  "Movie": "Padosan",
+  "Language": "Hindi",
+  "Genre": "Comedy",
+  "Stars": 25,
+  "ReleaseDate": "1968-11-29",
+  "Color": "BW",
+  "Image": "Padosan",
+  "Overview": "Bhola falls in love with his neighbour Bindu, a fashionable college girl. In order to woo her, he seeks help from his musical friend but loses all hope when she shows interest in someone else."
  }
 ]
