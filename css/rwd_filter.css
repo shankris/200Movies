@@ -11,7 +11,7 @@
      #movies {
        display: grid;
        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-       grid-gap: 10px;
+       grid-gap: 4px;
        margin: 0px auto;
        padding: 20px 0 50px 0;
        position: relative;
@@ -19,7 +19,7 @@
 
      @media only screen and (max-width: 768px) {
        #movies {
-         grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+         grid-template-columns: repeat(auto-fit, minmax(180px, auto));
          grid-gap: 10px;
        }
 
@@ -31,7 +31,7 @@
 
      @media only screen and (max-width: 400px) {
        #movies {
-         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+         grid-template-columns: repeat(auto-fit, minmax(160px, auto));
          grid-gap: 6px;
        }
 
