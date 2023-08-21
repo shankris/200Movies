@@ -2,16 +2,37 @@ let sortBy = "Name";
 let movieList = [];
 // let sortOrder = document.getElementById("sortOrder").value;
 const movieDetail = document.getElementById("movieDetail");
-
+let modalTitle = document.getElementById("modalTitle");
+modalTitle = "Movie Title 1";
 // sort.addEventListener("change", setSortOrder);
 
 function showDetail(movieName) {
   let movie = movieList.filter((movie) => {
     if (movie.Image == movieName) return movie;
   });
+
+  modalTitle.innerHTML = "";
+  modalTitle.innerHTML = `<h1>${movie.Movie}</h1>`;
   movieDetail.innerHTML = "";
-  movieDetail.innerHTML += `${movie[0].Movie}
-  <br> ${movie[0].ReleaseDate}
+  movieDetail.innerHTML += `
+
+<div class="movieLeft">
+  <img src='img/movies/${movie[0].Image}.jpg' class="hirzPic">
+</div>
+
+<div class="movieRight">
+<div class="movieTxt">
+  <h1>${movie[0].Movie}</h1>
+  <div class="fieldName">Release Date</div>
+  <div class="value"> ${movie[0].ReleaseDate}</div>
+  
+  <div class="fieldName">Overview</div>
+  <div class="value">${movie[0].Overview}</div>
+  
+  <div class="fieldName">Movie Plot</div>
+
+   </div>
+</div>
   `;
 }
 
@@ -32,6 +53,7 @@ const loadMovies = async () => {
     movieList.sort(SortByName);
     movies.innerHTML = movieList;
     displayList(movieList);
+    initializePanel();
   } catch (err) {
     console.error(err);
   }
@@ -118,7 +140,7 @@ const displayList = (movieList) => {
         console.log("Number of movies: ", movieList.length);
         let release = movie.ReleaseDate.substring(0, 4);
         return `
-          <div class="movie">
+          <div onClick="showDetail('${movie.Image}')" class="movie js-cd-panel-trigger" data-panel="main">
             <a onClick="showDetail('${movie.Image}')"><img src="img/movies_LowRes/${movie.Image}.jpg"  loading="lazy" alt="${movie.Movie}" class="moviePic"></a>
               <div class="title">${movie.Movie}<br>
                 <div class="year">${release}</div>
@@ -145,3 +167,47 @@ const displayList = (movieList) => {
 };
 
 loadMovies();
+
+function initializePanel() {
+  // Slide In Panel - by CodyHouse.co
+  var panelTriggers = document.getElementsByClassName("js-cd-panel-trigger");
+  console.log(panelTriggers);
+  if (panelTriggers.length > 0) {
+    for (var i = 0; i < panelTriggers.length; i++) {
+      (function (i) {
+        var panelClass = "js-cd-panel-" + panelTriggers[i].getAttribute("data-panel"),
+          panel = document.getElementsByClassName(panelClass)[0];
+        // open panel when clicking on trigger btn
+        panelTriggers[i].addEventListener("click", function (event) {
+          event.preventDefault();
+          addClass(panel, "cd-panel--is-visible");
+        });
+        //close panel when clicking on 'x' or outside the panel
+        panel.addEventListener("click", function (event) {
+          if (hasClass(event.target, "js-cd-close") || hasClass(event.target, panelClass)) {
+            event.preventDefault();
+            removeClass(panel, "cd-panel--is-visible");
+          }
+        });
+      })(i);
+    }
+  }
+
+  //class manipulations - needed if classList is not supported
+  //https://jaketrent.com/post/addremove-classes-raw-javascript/
+  function hasClass(el, className) {
+    if (el.classList) return el.classList.contains(className);
+    else return !!el.className.match(new RegExp("(\\s|^)" + className + "(\\s|$)"));
+  }
+  function addClass(el, className) {
+    if (el.classList) el.classList.add(className);
+    else if (!hasClass(el, className)) el.className += " " + className;
+  }
+  function removeClass(el, className) {
+    if (el.classList) el.classList.remove(className);
+    else if (hasClass(el, className)) {
+      var reg = new RegExp("(\\s|^)" + className + "(\\s|$)");
+      el.className = el.className.replace(reg, " ");
+    }
+  }
+}

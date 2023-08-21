@@ -84,32 +84,30 @@
   <div class="search"><input type="text" id="searchBar" class="searchBox" placeholder="Search Movies"></div>
   </div>
 
-
-
   <div class="container">
+    <div class="js-cd-panel-trigger" data-panel="main">Fire Panel</div>
     <div id="movies">
 
     </div>
   </div>
 
-  <div id="movieDetail"></div>
+  <!-- <div id="movieDetail"></div> -->
 
-  <div class="cd-panel cd-panel--from-right js-cd-panel-main">
-    <header class="cd-panel__header">
-      <h1>Title Goes Here</h1>
+  <div class="cd-panel cd-panel--from-right js-cd-panel-main" data-panel="main">
+    <header class="cd-panel__header" id="title">
+      <h1>Movie Details</h1>
       <a href="#0" class="cd-panel__close js-cd-close">Close</a>
     </header>
 
     <div class="cd-panel__container">
       <div class="cd-panel__content">
-        <p id="movieDetail">Sample Text</p>
+        <div id="movieDetail">Sample Text</div>
       </div> <!-- cd-panel__content -->
     </div> <!-- cd-panel__container -->
   </div> <!-- cd-panel -->
 
-
   <script src="js/movie2.js"></script>
-  <script src="js/panel.js"></script>
+  <!-- <script src="js/panel.js"></script> -->
 
 
   <script>
