@@ -171,7 +171,7 @@ loadMovies();
 function initializePanel() {
   // Slide In Panel - by CodyHouse.co
   var panelTriggers = document.getElementsByClassName("js-cd-panel-trigger");
-  console.log(panelTriggers);
+  // console.log(panelTriggers);
   if (panelTriggers.length > 0) {
     for (var i = 0; i < panelTriggers.length; i++) {
       (function (i) {
