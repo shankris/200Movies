@@ -98,8 +98,7 @@ function filterMovies() {
 
   let filteredMovies = [];
 
-  console.log("Language:", lang, " Genre:", genre, " Sort Order: ", sortOrder);
-
+  // console.log("Language:", lang, " Genre:", genre, " Sort Order: ", sortOrder);
   // const filteredMovies = movieList.filter(value => value.Language === lang)
 
   if (lang != "All" && genre != "AllGenres") {
@@ -129,6 +128,7 @@ function filterMovies() {
   }
 
   displayList(filteredMovies);
+  initializePanel();
 }
 
 // Display Data
@@ -141,7 +141,7 @@ const displayList = (movieList) => {
         let release = movie.ReleaseDate.substring(0, 4);
         return `
           <div onClick="showDetail('${movie.Image}')" class="movie js-cd-panel-trigger" data-panel="main">
-            <a onClick="showDetail('${movie.Image}')"><img src="img/movies_LowRes/${movie.Image}.jpg"  loading="lazy" alt="${movie.Movie}" class="moviePic"></a>
+            <img src="img/movies_LowRes/${movie.Image}.jpg"  loading="lazy" alt="${movie.Movie}" class="moviePic">
               <div class="title">${movie.Movie}<br>
                 <div class="year">${release}</div>
               </div>
