@@ -17,7 +17,7 @@ function showDetail(movieName) {
   movieDetail.innerHTML += `
 
 <div class="movieLeft">
-  <img src='img/movies/${movie[0].Image}.jpg' class="hirzPic">
+  <img src="img/movies_LowRes/${movie[0].Image}.jpg" onLoad="this.src='img/movies/${movie[0].Image}.jpg'"  class="hirzPic">
 </div>
 
 <div class="movieRight">

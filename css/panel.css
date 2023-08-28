@@ -13,7 +13,6 @@ Slide In Panel - by CodyHouse.co
   padding: 4em 0;
 }
 
-
 .cd-panel {
   position: fixed;
   top: 0;
@@ -25,7 +24,7 @@ Slide In Panel - by CodyHouse.co
   transition: visibility 0s 0.6s;
   z-index: 20;
   overflow-y: scroll;
-  background-color: #222c37;
+  background-color: rgba(33, 43, 54, );
 }
 
 .cd-panel::after {
@@ -77,6 +76,8 @@ Slide In Panel - by CodyHouse.co
   color: #203060;
   background-color: #dbdbdb;
   padding-left: 25px;
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .cd-panel--from-right .cd-panel__header {
