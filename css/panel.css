@@ -24,7 +24,7 @@ Slide In Panel - by CodyHouse.co
   transition: visibility 0s 0.6s;
   z-index: 20;
   overflow-y: scroll;
-  background-color: rgba(33, 43, 54, );
+  /* background-color: rgba(33, 43, 54, .5); */
 }
 
 .cd-panel::after {
