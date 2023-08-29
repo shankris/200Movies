@@ -1122,7 +1122,7 @@
  {
   "Movie": "Johnny English",
   "Language": "English",
-  "Genre": "Action",
+  "Genre": "Comedy",
   "Stars": 35,
   "ReleaseDate": "2003-04-06",
   "Color": "Color",
@@ -1131,7 +1131,7 @@
  },
  {
   "Movie": "Johnny English Reborn",
-  "Language": "English",
+  "Language": "Comedy",
   "Genre": "Action",
   "Stars": 35,
   "ReleaseDate": "2011-09-23",
@@ -1267,7 +1267,7 @@
   "ReleaseDate": "1969-03-13",
   "Color": "Color",
   "Image": "LoveBug",
-  "Overview": "The inimitable VW Beetle is losing all his races and destined for the scrap heap until mechanic Hank takes him over and gives him a new lease of life. Soon, Herbie is winning again, to the fury of his previous owner, who builds a menacing black bug to challenge Herbie to the ultimate race."
+  "Overview": "Race car driver Jim Douglas (Dean Jones) and his philosophical mechanic, Tennessee Steinmetz (Buddy Hackett), find themselves in possession of a white Volkswagen Beetle that seems to have a mind and spirit of its own. Calling the car Herbie, Jim and Tennessee become the talk of the California racing circuit -- much to the displeasure of sports-car dealer Peter Thorndyke (David Tomlinson), who tries to use his assistant (Michele Lee) to come between the friends and their car."
  },
  {
   "Movie": "Madagascar",
