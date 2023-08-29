@@ -88,6 +88,7 @@ searchBar.addEventListener("keyup", (e) => {
     return character.Movie.toLowerCase().includes(searchString);
   });
   displayList(filteredCharacters);
+  initializePanel();
 });
 
 // Filter data by language
