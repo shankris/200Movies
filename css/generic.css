@@ -43,7 +43,3 @@ h1.logo .logoBold {
   color: #fff;
   padding: 0 2px 0 0;
 }
-
-body.hideScroll {
-  overflow: hidden;
-}
