@@ -11,12 +11,18 @@
         panelTriggers[i].addEventListener("click", function (event) {
           event.preventDefault();
           addClass(panel, "cd-panel--is-visible");
+          document.querySelector(document.body).classList.add("hideScroll");
+          // body.classList.add("hideScroll");
+          // addClass(body, "hideScroll");
         });
         //close panel when clicking on 'x' or outside the panel
         panel.addEventListener("click", function (event) {
           if (hasClass(event.target, "js-cd-close") || hasClass(event.target, panelClass)) {
             event.preventDefault();
             removeClass(panel, "cd-panel--is-visible");
+            document.querySelector(document.body).classList.remove("hideScroll");
+            // body.classList.remove("hideScroll");
+            // removeClass(body, "hideScroll");
           }
         });
       })(i);
