@@ -29,7 +29,6 @@ function showDetail(movieName) {
   <div class="fieldName">Overview</div>
   <div class="value">${movie[0].Overview}</div>
   
-  <div class="fieldName">Movie Plot</div>
 
    </div>
 </div>
