@@ -6,10 +6,21 @@ let modalTitle = document.getElementById("modalTitle");
 modalTitle = "Movie Title 1";
 // sort.addEventListener("change", setSortOrder);
 
+function formatDate(value) {
+  let date = new Date(value);
+  const day = date.toLocaleString("default", { day: "2-digit" });
+  const month = date.toLocaleString("default", { month: "short" });
+  const year = date.toLocaleString("default", { year: "numeric" });
+  return day + " " + month + " " + year;
+}
+
 function showDetail(movieName) {
   let movie = movieList.filter((movie) => {
     if (movie.Image == movieName) return movie;
   });
+
+  releaseDate = movie[0].ReleaseDate;
+  releaseDate = formatDate(releaseDate);
 
   modalTitle.innerHTML = "";
   modalTitle.innerHTML = `<h1>${movie.Movie}</h1>`;
@@ -23,9 +34,22 @@ function showDetail(movieName) {
 <div class="movieRight">
 <div class="movieTxt">
   <h1>${movie[0].Movie}</h1>
+
+  <div class="movieDetails">
+<span>
   <div class="fieldName">Release Date</div>
-  <div class="value"> ${movie[0].ReleaseDate}</div>
-  
+    <div class="value"> ${releaseDate}</div>
+</span>
+<span>
+    <div class="fieldName">Genre</div>
+    <div class="value"> ${movie[0].Genre}</div>
+</span>
+<span>
+    <div class="fieldName">Language</div>
+    <div class="value"> ${movie[0].Language}</div>
+</span>
+    </div>
+
   <div class="fieldName">Overview</div>
   <div class="value">${movie[0].Overview}</div>
   
