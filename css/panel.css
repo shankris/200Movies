@@ -309,7 +309,7 @@ Slide In Panel - by CodyHouse.co
   padding: 10px 20px 0px 20px;
   line-height: 1.7;
   max-width: 90%;
-  width: 700px;
+  /* width: 700px; */
 }
 
 
@@ -348,6 +348,7 @@ Slide In Panel - by CodyHouse.co
   width: 100%;
   margin: 0 auto;
   border-radius: 6px;
+  min-width: 500px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -355,6 +356,7 @@ Slide In Panel - by CodyHouse.co
     width: 450px;
     max-width: 100%;
     height: auto;
+    min-width: 350px;
   }
 
   .cd-panel__content .fieldName {
