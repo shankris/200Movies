@@ -50,6 +50,16 @@
   "Overview": "Henry Crawford is the titular absent-minded professor busy at work in his laboratory. He has a girlfriend, but she is getting frustrated at his repeatedly missing their dates and spending more time with his experiments than with her. One day, Prof. Crawford makes an incredible discovery a form of rubber that defies gravity with each bounce, which he names Flubber. Hopefully, with this invention Crawford can prove to his love that he's not just a hopeless loser stuck doing dead-end research."
  },
  {
+  "Movie": "Addicted to Love",
+  "Language": "English",
+  "Genre": "Romance",
+  "Cast": "Meg Ryan, Matthew Broderick, Kelly Preston, Tchéky Karyo",
+  "ReleaseDate": "1997-05-23",
+  "Color": "Color",
+  "Image": "AddictedToLove",
+  "Overview": "Small-town astronomer Sam (Matthew Broderick) is devastated when his fiancée, Linda (Kelly Preston), leaves him for French chef Anton Depeaux (Tcheky Karyo) during an out-of-town vacation. Obsessed, Sam follows her to New York City and moves in across the street from Linda and Anton's apartment, where he spies on them and records their lives. One day he is joined by Maggie (Meg Ryan), Anton's equally vengeful ex-girlfriend, and the two plot to break up the new couple."
+ },
+ {
   "Movie": "Adventures of Tintin, The",
   "Language": "English",
   "Genre": "Animated",
@@ -250,6 +260,16 @@
   "Overview": "Ranjeet Thadani (Rajat Kapoor), a bored, arrogant music company executive hurts his back the night he has found a prize catch for a weekly bring - your -idiot talent dinner hosted by his friends and him. He ends up spending the evening with this idiot, Bharat Bhushan (Vinay Pathak) who tries to help him get his wife (Sarika) back who left him earlier that day. The result is utter chaos let loose by the idiot, who cannot do a single thing without messing it up further. The plot turns around to be a series of mini disasters that leave Ranjeet's comfortable life in ruins. Call it the idiot's revenge!"
  },
  {
+  "Movie": "Bheja Fry 2",
+  "Language": "Hindi",
+  "Genre": "Comedy",
+  "Cast": "Vinay Pathak, Kay Kay Menon, Rukhsaar Rehman, Minisha Lamba, Suresh Menon, Amol Gupte, Kishwer Merchant",
+  "ReleaseDate": "2011-06-17",
+  "Color": "Color",
+  "Image": "BhejaFry2",
+  "Overview": "Bhushan, a tax inspector, wins a ticket to a cruise-liner. Relaxing there, he meets Ajit, a businessman who is evading an IT raid. They end up on an isolated island that leads to comical situations."
+ },
+ {
   "Movie": "Billu Barber",
   "Language": "Hindi",
   "Genre": "Drama",
@@ -367,7 +387,7 @@
   "ReleaseDate": "2007-08-17",
   "Color": "Color",
   "Image": "BuddhaMarGaya",
-  "Overview": "Laxmikant Kabadiya and his twin-sister, Prerna, started as mere beggars near Dadar Railway Station, and with the assistance of Vidyut Baba, they moved to collecting garbage, and recyclables, established their own recycling business, slowly acquired wealth and became multi-millionaires. Laxmikant went on to get married and sired two sons, Sameer and Ranjeet, who, in turn, went on to get married to Anju and Shruti. While Ranjeet has two daughters, Sanjana and Namrata, Sameer has one son, Pawan. Vidyut Baba, a Bi-sexual, is now their family Guru, and they have a trusted family servant named Ramu. The Kabadia family is now ready to launch it's first Public Offering, which will generate Crores of Rupees. The entire family is all set to enjoy this new-found wealth when they find out that while being intimate with a sexy, struggling actress, Kim, widower Laxmikant has passed away. The entire family know that this will ruin their future plans and decide to keep his death a secret. They threaten Kim with dire consequences and criminal charges, and let her flee. Unfortunately for them, Ramu finds out and starts to blackmail them collectively for jewelry and cash. The desperate family is all set to secretly cremate Laxmikant, but things get out of hand and they, after buying the dead body of a poor man, announce the death of Laxmikant's cousin. Amidst media frenzy, the Kabadias arrange for the public appearance of Laxmikant, followed quickly by another funeral, this time of an unknown Christian male, who they pass off as another family relative. Watch what happens when Ramu goes live on TV to announce the untimely passing away of a very much alive Vidyut Baba, throwing open a virtual Pandora's box. Amidst hilarious chaos, the family's lives are complicated even more when they find out to their shock that Laxmikant was leading a dual life and had sired a third son from another woman."
+  "Overview": "Laxmikant Kabadiya and his twin sister, Prerna, have made it to the top from the very bottom, and now -- as they are about to land their greatest windfall of all -- an untimely and messy family death spoils their plans."
  },
  {
   "Movie": "Cars",
@@ -394,7 +414,7 @@
   "Language": "Hindi",
   "Genre": "Comedy",
   "Cast": "Ashok Kumar, Madhubala, Anoop Kumar, Kishore Kumar",
-  "ReleaseDate": "1958\/01\/01",
+  "ReleaseDate": "1958-01-01",
   "Color": "BW",
   "Image": "ChaltiKaNaamGaadi",
   "Overview": "Brijmohan believes that his love, Kamini, left him for another man and resents women. When his two brothers, who had planned for lifelong bachelorhood, fall in love, they fear his wrath."
@@ -544,7 +564,7 @@
   "Language": "English",
   "Genre": "Animated",
   "Cast": "Steve Carell, Kristen Wiig, Trey Parker, Miranda Cosgrove, Steve Coogan, Jenny Slate, Dana Gaier, Julie Andrews",
-  "ReleaseDate": "2017\/06\/30",
+  "ReleaseDate": "2017-06-30",
   "Color": "Color",
   "Image": "DespicableMe3",
   "Overview": "Gru meets his long-lost twin brother Dru, after getting fired from the Anti-Villain League. However, the siblings find themselves at loggerheads with a child actor-turned-villain."
@@ -554,7 +574,7 @@
   "Language": "Hindi",
   "Genre": "Drama",
   "Cast": "Shah Rukh Khan, Aishwarya Rai, Madhuri Dixit",
-  "ReleaseDate": "2002\/07\/12",
+  "ReleaseDate": "2002-07-12",
   "Color": "Color",
   "Image": "Devdas",
   "Overview": "After his wealthy family prohibits him from marrying the woman he is in love with, Devdas's life spirals downward as he takes up alcohol and a life of vice to alleviate the pain."
@@ -981,7 +1001,7 @@
   "Overview": "An uptight by-the-book cop must protect the widow of a drug boss from crooked cops and gunmen."
  },
  {
-  "Movie": "How to lose a guy in 10 days",
+  "Movie": "How to Lose a Guy in 10 Days",
   "Language": "English",
   "Genre": "Romance",
   "ReleaseDate": "2003-01-27",
@@ -1116,6 +1136,16 @@
   "Overview": "The most dangerous former operative of the CIA is drawn out of hiding to uncover hidden truths about his past."
  },
  {
+  "Movie": "Jeans",
+  "Language": "Tamil",
+  "Genre": "Romance",
+  "Cast": "Prashanth, Aishwarya Rai",
+  "ReleaseDate": "1998-04-24",
+  "Color": "Color",
+  "Image": "Jeans",
+  "Overview": "When Visu meets Madhumitha (Aishwarya Rai), they quickly fall in love and plan to marry. But the sweethearts hit a snag in their impending nuptials when Visu's father, Rajamani (Nasser), objects: Visu has a twin brother, Ramu, and the old man is set on both boys marrying twins. A solution is easily arrived at when Visu introduces his brother to his bride's twin sister -- who is actually Madhumitha in disguise. Mayhem ensues when Ramu unwittingly falls in love with his future sister-in-law."
+ },
+ {
   "Movie": "Johnny English",
   "Language": "English",
   "Genre": "Comedy",
@@ -1155,10 +1185,20 @@
   "Movie": "Just Like Heaven",
   "Language": "English",
   "Genre": "Romance",
-  "ReleaseDate": "2005\/09\/16",
+  "ReleaseDate": "2005-09-16",
   "Color": "Color",
   "Image": "JustLikeHeaven",
   "Overview": "Elizabeth Masterson, an emergency room physician in San Francisco whose work is everything, is in a car crash while on her way to a blind date at her sister's. Three months later, landscape architect David Abbott, needing a fresh start after his wife's death, takes a sublet on Elizabeth's apartment.\n<br> <br>Elizabeth begins to appear in the apartment, and both are confused. She thinks he is a squatter, and he thinks she broke in. They soon realize she moves through walls and objects. Elizabeth does not know who she is, and insists she is not dead. David unsuccessfully tries to have her spirit exorcised. As only David can see and hear her, others think he is hallucinating and talking to himself. Elizabeth asks him to help her discover who she really is."
+ },
+ {
+  "Movie": "Kadhal Kottai",
+  "Language": "Tamil",
+  "Genre": "Romance",
+  "Cast": "Ajith Kumar, Devayani, Heera Rasakopal, Karan, Thalaivasal Vijay, Manivannan",
+  "ReleaseDate": "1996-07-12",
+  "Color": "Color",
+  "Image": "KadhalKottai",
+  "Overview": "Kamali loses her bag in the railway station. Later, her bag is sent to her home, along with a letter from Surya, who found it. Kamali and Surya send letters to each other and soon fall in love."
  },
  {
   "Movie": "Kal Ho Naa Ho",
@@ -1479,7 +1519,7 @@
   "Movie": "Padosan",
   "Language": "Hindi",
   "Genre": "Comedy",
-  "ReleaseDate": "1968\/11\/29",
+  "ReleaseDate": "1968-11-29",
   "Color": "BW",
   "Image": "Padosan",
   "Overview": "Bhola falls in love with his neighbour Bindu, a fashionable college girl. In order to woo her, he seeks help from his musical friend but loses all hope when she shows interest in someone else."
@@ -1566,6 +1606,16 @@
   "Overview": "When a millionaire wheeler-dealer enters a business contract with a Hollywood hooker Vivian Ward, he loses his heart in the bargain."
  },
  {
+  "Movie": "Qayamat Se Qayamat Tak",
+  "Language": "Hindi",
+  "Genre": "Drama",
+  "Cast": "Aamir Khan, Juhi Chawla, Goga Kapoor",
+  "ReleaseDate": "1988-04-29",
+  "Color": "Color",
+  "Image": "QSQT",
+  "Overview": "Despite knowing that their respective families are bitter enemies, Raj and Rashmi fall in love with each other and decide to elope."
+ },
+ {
   "Movie": "Rab Ne Bana Di Jodi",
   "Language": "Hindi",
   "Genre": "Romance",
@@ -1573,6 +1623,15 @@
   "Color": "Color",
   "Image": "RabNeBanaDiJodi",
   "Overview": "A lonely 40-ish man, likely to remain a bachelor, has a chance to find the love of his life when he falls for a vivacious young woman. Have you ever stopped to think if the most ordinary, uninteresting, unobtrusive man you might see on the road or around you might have a love story to tell? Maybe not. How can an ordinary man have a breathtaking, goose flesh igniting, awe inspiring love story of all things to tell? <br>This is what happened to Surinder Sahni (Shahrukh Khan) - a simple, clean hearted, honest man, leading a humdrum life, when he meets his total opposite and finds love in the flamboyant, fun-loving, vivacious - Taani (Anushka Sharma) for whom the whole world is her canvas and she paints her own life with the colours of rainbow all until unforeseen circumstances changes it all and brings them together. What follows is a journey filled with laughter, tears, joy, pain, music, dance and a lot of love. A journey that makes us believe that there is an extraordinary love story in every ordinary jodi (couple)."
+ },
+ {
+  "Movie": "Rangeela",
+  "Language": "Hindi",
+  "Genre": "Drama",
+  "ReleaseDate": "1995-09-08",
+  "Color": "Color",
+  "Image": "Rangeela",
+  "Overview": "Mili's ambition of becoming a famous actor is met with several hurdles when Raj Kamal, a noted actor, and Munna, her childhood friend, both fall in love with her."
  },
  {
   "Movie": "Ratatouille",
@@ -1716,7 +1775,7 @@
   "Genre": "Action",
   "ReleaseDate": "1984-10-26",
   "Color": "Color",
-  "Image": "TerminatorThe",
+  "Image": "Terminator1",
   "Overview": "In the post-apocalyptic future, reigning tyrannical supercomputers teleport a cyborg assassin known as the \"Terminator\" back to 1984 to kill Sarah Connor, whose unborn son is destined to lead insurgents against 21st century mechanical hegemony. Meanwhile, the human-resistance movement dispatches a lone warrior to safeguard Sarah. Can he stop the virtually indestructible killing machine?"
  },
  {
@@ -1725,7 +1784,7 @@
   "Genre": "Action",
   "ReleaseDate": "1991-08-24",
   "Color": "Color",
-  "Image": "Terminator2JudgmentDay",
+  "Image": "Terminator2",
   "Overview": "Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah."
  },
  {
@@ -1734,14 +1793,14 @@
   "Genre": "Action",
   "ReleaseDate": "2003-07-25",
   "Color": "Color",
-  "Image": "Terminator3RiseOfTheMachines",
+  "Image": "Terminator3",
   "Overview": "It's been 10 years since John Connor saved Earth from Judgment Day, and he's now living under the radar, steering clear of using anything Skynet can trace. That is, until he encounters T-X, a robotic assassin ordered to finish what T-1000 started. Good thing Connor's former nemesis, the Terminator, is back to aid the now-adult Connor … just like he promised."
  },
  {
   "Movie": "The Brain",
   "Language": "English",
   "Genre": "Drama",
-  "ReleaseDate": "1969\/03\/07",
+  "ReleaseDate": "1969-03-07",
   "Color": "Color",
   "Image": "TheBrain",
   "Overview": "The mastermind (David Niven) of Britain's great train robbery plans to rob a French train of NATO money bound for Brussels."
@@ -1837,6 +1896,16 @@
   "Overview": "Truman Burbank is the star of The Truman Show, a 24-hour-a-day reality TV show that broadcasts every aspect of his life without his knowledge. His entire life has been an unending soap opera for consumption by the rest of the world. And everyone he knows, including his wife and his best friend is really an actor, paid to be part of his life."
  },
  {
+  "Movie": "Ullathai Allitha",
+  "Language": "Tamil",
+  "Genre": "Comedy",
+  "Cast": "Karthik, Rambha, Goundamani",
+  "ReleaseDate": "1996-01-05",
+  "Color": "Color",
+  "Image": "UllathaiAllitha",
+  "Overview": "Tired of his father's disciplinarian ways and to avoid marrying a girl chosen by the latter, Raja runs away to Ooty. There, he is hired as a driver by the man whose daughter he was supposed to marry."
+ },
+ {
   "Movie": "Unnaipol Oruvan",
   "Language": "Tamil",
   "Genre": "Drama",
@@ -1912,7 +1981,7 @@
   "Movie": "World Is Not Enough, The",
   "Language": "English",
   "Genre": "Action",
-  "ReleaseDate": "1999\/11\/08",
+  "ReleaseDate": "1999-11-08",
   "Color": "Color",
   "Image": "WorldIsNotEnough",
   "Overview": "Greed, revenge, world dominance and high-tech terrorism – it's all in a day's work for Bond, who's on a mission to protect a beautiful oil heiress from a notorious terrorist. In a race against time that culminates in a dramatic submarine showdown, Bond works to defuse the international power struggle that has the world's oil supply hanging in the balance."
@@ -1921,7 +1990,7 @@
   "Movie": "You've Got Mail",
   "Language": "English",
   "Genre": "Romance",
-  "ReleaseDate": "1988\/02\/19",
+  "ReleaseDate": "1988-02-19",
   "Color": "Color",
   "Image": "YouveGotMail",
   "Overview": "Book superstore magnate, Joe Fox and independent book shop owner, Kathleen Kelly fall in love in the anonymity of the Internet—both blissfully unaware that he's trying to put her out of business."
