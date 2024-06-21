@@ -5,7 +5,6 @@ Slide In Panel - by CodyHouse.co
 -------------------------------- */
 .cd-main-content {
   text-align: center;
-
 }
 
 .cd-main-content h1 {
@@ -47,6 +46,13 @@ Slide In Panel - by CodyHouse.co
   -webkit-transition: visibility 0s 0s;
   transition: visibility 0s 0s;
 
+}
+
+.smallTxt {
+  font-size: 12px;
+  color: #797979;
+  /* margin: 0 0 0 20px; */
+  line-height: 1.6;
 }
 
 .cd-panel.cd-panel--is-visible::after {
@@ -348,7 +354,7 @@ Slide In Panel - by CodyHouse.co
   width: 100%;
   margin: 0 auto;
   border-radius: 6px;
-  min-width: 500px;
+  min-width: 50%;
 }
 
 @media only screen and (max-width: 768px) {

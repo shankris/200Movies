@@ -1,0 +1,9 @@
+
+ - Scroll to top on load
+ - Disable scroll when panel is open
+ - Display Actors
+ - Feedback - Movie suggestions
+ - About 200Movies - Display number of movies programatically
+ - Add back to top ? if requried
+ - Google stats
+ 

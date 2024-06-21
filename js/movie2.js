@@ -29,6 +29,10 @@ function showDetail(movieName) {
 
 <div class="movieLeft">
   <img src="img/movies_LowRes/${movie[0].Image}.jpg" onLoad="this.src='img/movies/${movie[0].Image}.jpg'"  class="hirzPic">
+
+
+
+
 </div>
 
 <div class="movieRight">
@@ -50,7 +54,12 @@ function showDetail(movieName) {
 </span>
     </div>
 
-  <div class="fieldName">Overview</div>
+<span>
+  <div class="fieldName">Actors</div>
+  <div class="smallTxt"> ${movie[0].Cast}</div>
+</span>
+
+  <div class="fieldName">Overview <span class="smallTxt"> &nbsp; - &nbsp; AI Asisted Content</span></div>
   <div class="value">${movie[0].Overview}</div>
   
 

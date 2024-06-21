@@ -11,7 +11,8 @@
         panelTriggers[i].addEventListener("click", function (event) {
           event.preventDefault();
           addClass(panel, "cd-panel--is-visible");
-          document.querySelector(document.body).classList.add("hideScroll");
+          document.documentElement.style.overflow = "hidden";
+          // document.querySelector(document.body).classList.add("hideScroll");
           // body.classList.add("hideScroll");
           // addClass(body, "hideScroll");
         });
@@ -20,7 +21,8 @@
           if (hasClass(event.target, "js-cd-close") || hasClass(event.target, panelClass)) {
             event.preventDefault();
             removeClass(panel, "cd-panel--is-visible");
-            document.querySelector(document.body).classList.remove("hideScroll");
+            document.documentElement.style.overflow = "auto";
+            // document.querySelector(document.body).classList.remove("hideScroll");
             // body.classList.remove("hideScroll");
             // removeClass(body, "hideScroll");
           }
