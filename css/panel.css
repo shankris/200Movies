@@ -312,7 +312,7 @@ Slide In Panel - by CodyHouse.co
 
 
 .cd-panel__content .movieRight {
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 0px 30px;
   line-height: 1.7;
   max-width: 90%;
   /* width: 700px; */
@@ -329,7 +329,7 @@ Slide In Panel - by CodyHouse.co
 }
 
 .cd-panel__content .fieldName {
-  padding: 30px 0 0;
+  padding: 20px 0 0;
   font-weight: 500;
   color: #7488c1;
   font-size: 16px;
@@ -355,6 +355,8 @@ Slide In Panel - by CodyHouse.co
   margin: 0 auto;
   border-radius: 6px;
   min-width: 50%;
+  position: sticky;
+  top: 0;
 }
 
 @media only screen and (max-width: 768px) {

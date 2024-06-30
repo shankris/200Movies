@@ -4,6 +4,9 @@
  - Display Actors
  - Feedback - Movie suggestions
  - About 200Movies - Display number of movies programatically
+ - Ripple on click on the movie card
+ - Search type ahead with images and other data
+ - Add lowrez pic before the highrez pic loads
+
  - Add back to top ? if requried
  - Google stats
- 
