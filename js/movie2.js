@@ -1,5 +1,6 @@
 let sortBy = "Name";
 let movieList = [];
+
 // let sortOrder = document.getElementById("sortOrder").value;
 const movieDetail = document.getElementById("movieDetail");
 let modalTitle = document.getElementById("modalTitle");
@@ -29,7 +30,7 @@ function showDetail(movieName) {
 
 <div class="movieLeft">
   <img src="img/movies_LowRes/${movie[0].Image}.jpg" onLoad="this.src='img/movies/${movie[0].Image}.jpg'" 
-   class="hirzPic" style="background-image: url("img/movies_LowRes/${movie[0].Image}.jpg");">
+   class="hirzPic" style="background-image: url("img/movies_LowRes/${movie[0].Image}.jpg"); min-width:50%;">
 </div>
 
 <div class="movieRight">
@@ -63,6 +64,10 @@ function showDetail(movieName) {
    </div>
 </div>
   `;
+
+  // Scroll the Modal content top
+  let content = document.getElementById("movieDetail");
+  content.scrollIntoView(true);
 }
 
 // object.addEventListener("load", resetFilters);
