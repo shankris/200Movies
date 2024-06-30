@@ -30,7 +30,7 @@ function showDetail(movieName) {
 
 <div class="movieLeft">
   <img src="img/movies_LowRes/${movie[0].Image}.jpg" onLoad="this.src='img/movies/${movie[0].Image}.jpg'" 
-   class="hirzPic" style="background-image: url("img/movies_LowRes/${movie[0].Image}.jpg"); min-width:50%;">
+   class="hirzPic" style="min-width:50%;">
 </div>
 
 <div class="movieRight">
@@ -66,8 +66,9 @@ function showDetail(movieName) {
   `;
 
   // Scroll the Modal content top
-  let content = document.getElementById("movieDetail");
+  let content = document.getElementById("mainDatail");
   content.scrollIntoView(true);
+  // scrollTop: 0;
 }
 
 // object.addEventListener("load", resetFilters);
